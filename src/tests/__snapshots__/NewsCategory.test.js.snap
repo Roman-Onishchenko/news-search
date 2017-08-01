@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsCategory renders without crashing 1`] = `
+<div>
+  <div
+    className="preloader"
+  >
+    <img
+      alt="preload"
+      className="preload_img"
+      src="preview.png"
+    />
+  </div>
+  <div
+    className="news-category"
+  >
+    <Header />
+    <ul />
+  </div>
+</div>
+`;

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsMenu renders without crashing 1`] = `
+<div
+  className="news-list"
+>
+  <ul>
+    <li>
+      <Link
+        replace={false}
+        to="/bbc-sport"
+      >
+        Спортивные новости
+      </Link>
+    </li>
+    <li>
+      <Link
+        replace={false}
+        to="/the-economist"
+      >
+        Финансовые новости
+      </Link>
+    </li>
+    <li>
+      <Link
+        replace={false}
+        to="/techradar"
+      >
+        Новости науки
+      </Link>
+    </li>
+    <li>
+      <Link
+        replace={false}
+        to="/usa-today"
+      >
+        Зарубежные новости
+      </Link>
+    </li>
+    <li>
+      <Link
+        replace={false}
+        to="/google-news"
+      >
+        Новости культуры
+      </Link>
+    </li>
+    <li>
+      <Link
+        replace={false}
+        to="/fortune"
+      >
+        Разное
+      </Link>
+    </li>
+  </ul>
+</div>
+`;

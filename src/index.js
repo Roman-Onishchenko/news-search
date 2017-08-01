@@ -9,8 +9,9 @@ import { ConnectedRouter } from 'connected-react-router';
 import createSagaMiddleware from 'redux-saga';
 import reducer from './reducer';
 import mySaga from './sagas';
-import './index.css';
-import App from './App';
+// import 'assets/styles/index.css';
+import NewsMenu from './NewsMenu';
+import NewsCategory from './NewsCategory';
 import registerServiceWorker from './registerServiceWorker';
 
 const history = createBrowserHistory();
@@ -37,7 +38,11 @@ ReactDOM.render(
       <ConnectedRouter history={history}>
         <BrowserRouter>
            <Switch>
-              <Route exact path='/' component={App} />
+             <Route
+               exact path="/"
+               component={NewsMenu}
+             />
+             <Route path="/:source" component={NewsCategory} />
             </Switch>
          </BrowserRouter>
       </ConnectedRouter>
