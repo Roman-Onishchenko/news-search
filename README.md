@@ -1,9 +1,3 @@
-![Imgur](https://i.imgur.com/7xrZxT8.png)
-
-# Kencharts
-React Native mobile app for monitoring markets & stocks updates in real-time charts. It helps to keep your investments close, anywhere you go.
-
----
 
 ## Installation
 
