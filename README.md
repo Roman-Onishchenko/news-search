@@ -28,7 +28,7 @@ $ npm start
 ---
 ## Project description
 Project's core folder is `src`.
-**`src` folder contents:**
+`src` folder contents:
 ### Folders
 - actions
 - components
