@@ -26,7 +26,7 @@ $ npm install
 $ npm start
 ```
 ---
-## Project description
+## Project structure
 Project's core folder is `src`.
 >`src` folder contents:
 ### Folders
@@ -44,6 +44,9 @@ Project's core folder is `src`.
 - Types.js
 - Utils.js
 
+---
+## Project description
+Let's concisely describe some project folders and files:
 + App.js aggregates all project screens and routes and gives them acccess to app's store via `provider`.
 + Route.js defines all project navigation routes.
 + Api.js contains functions which help fetch and parse data from api. 
