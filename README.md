@@ -3,4 +3,35 @@
 # Kencharts
 Mobile app for monitoring markets & stocks updates in real-time charts. It helps to keep your investments close, anywhere you go.
 
-# AMARKI core General libs for AMARKI micro services ## Getting Started To start server using current module look at example below: javascript const {Server} = require("@computools/amarki-core"); const server = new Server({env: config.env}); server.listen(config.port, () => { console.log("Server started on port", config.port); }); `Server` accepts next params: - env ### Workers Current module uses `Workers` to manage `http` messages Message structure should be next: { "type": "SERVICE_NAME.ENTITY_TYPE.ACTION_NAME", "params": { "foo": "bar" } } `Workers` usage example is given below: javascript const {WorkerContainer} = require("@computools/amarki-core"); WorkerContainer.setWorker(WorkerType.USER.GET_USER, (params, callback) => { userService.getUserById(params.id) .then((user) => { callback({ name: WorkerType.USER.GET_USER, status: 'OK', statusCode: 200, result: user }) }) .catch((err) => { throw err; }); }); Every worker uses a response interface. It's structure is next: javascript class Response { constructor(type, status, statusCode, result) { this.type = type; this.status = status; this.statusCode = statusCode; this.result = result; } } Response will return: { "type": "SOME_TYPE", "status": "OK", "satausCode": 200, "result": {foo: bar} } ### Custom errors `AMARKI core` module has custom Errors that can be used across all microservices To use custom Errors read example below: javascript const {BaseError} = require('@computools/amarki-core'); class UserNotFound extends BaseError { constructor() { super('USER_NOT_FOUND_ERROR', 'User not found', 'ERROR', 404); } } Except `BaseError` you can also use: - `NotFoundError` - `ServerError` `NotFoundError` structure javascript class NotFoundError extends BaseError { constructor(type) { super('NOT_FOUND_ERROR', type, 'Not found', 'ERROR', 404); } } `ServerError` structure javascript class ServerError extends BaseError { constructor(type, message) { super('SERVER_ERROR', type, message, 'ERROR', 500); } } ### Logger You can also use: - console.log() or logger.info() - console.info() or logger.info() - console.warn() or logger.warn() - console.debug() or logger.debug() For development javascript const {logger} = require('@computools/amarki-core'); logger.init(); logger.info('Message'); console.log('Message'); For production javascript const {logger} = require('@computools/amarki-core'); logger.init({ env: 'production', root: `${__dirname}/logs`, timePattern: 'YYYY-MM-DD hh:mm:ss', datePattern: 'yyyy-MM-dd.' }); logger.info('Message'); console.log('Message'); ### Sequelize To init sequelize run following code javascript const {sequelize} = require("@computools/amarki-core"); sequelize.init({ env: config.env, host: config.database.postgres.host, name: config.database.postgres.name, user: config.database.postgres.user, password: config.database.postgres.password, dialect: "postgres", modelsPath: path.join(__dirname, "models", "postgres") }); - env - NodeJS environment variable - host - database host - name - database name - user - database user - password - database user password - dialect - dialect database - modelPath - path for you models ### Validator To use validator run following code javascript const {BaseValidator} = require("@computools/amarki-core"); class EmailValidator extends BaseValidator { static validateEmail() { const object = { email: "example@example.com" }; const map = { email: {func: EmailValidator.isEmail, msg: "Email is required", required: true} }; EmailValidator.validate(object, map) } static isEmail(email) { return REGEXP_EMAIL_PATTERN.test(email); } } try { EmailValidator.validateEmail(); } catch (e) { console.log(e); } ## Installing Install using NPM npm i --save @computools/amarki-core ## Running the tests To run tests use command below npm run test ## License This project is licensed under the MIT License
+---
+
+## Installation
+
+- All the `code` required to get started
+- Images of what it should look like
+
+### Clone
+
+- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
+
+### Setup
+
+- If you want more syntax highlighting, format your code like this:
+
+> update and install this package first
+
+```shell
+$ brew update
+$ brew install fvcproductions
+```
+
+> now install npm and bower packages
+
+```shell
+$ npm install
+$ bower install
+```
+
+- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
+
+---
