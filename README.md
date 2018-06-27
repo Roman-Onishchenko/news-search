@@ -27,7 +27,7 @@ $ npm start
 ```
 ---
 ## Project structure
-Project's core folder is `src`.
+Project's core folder is `src`. Also project contains forked library, which is used to render different charts with necessary data. You can visit repo via the link `https://github.com/vetaliyrh7/react-native-charts-wrapper`.
 >`src` folder contents:
 ### Folders
 - actions
@@ -43,7 +43,7 @@ Project's core folder is `src`.
 - Theme.js
 - Types.js
 - Utils.js
-Also project contains forked library, which is used to render different charts with necessary data. You can visit repo via the link `https://github.com/vetaliyrh7/react-native-charts-wrapper`
+
 ---
 ## Project description
 Let's concisely describe some project folders and files:
