@@ -44,8 +44,8 @@ Project's core folder is `src`.
 - Types.js
 - Utils.js
 
-App.js aggregates all project screens and routes and gives them acccess to app's store via `provider`.
-Route.js defines all project navigation routes.
-Api.js contains functions which help fetch and parse data from api. 
-Types.js defines descriptions for different data types, which are used in an app.
-Utils.js contains useful functions such as email validation, text translation, formatting uri strings etc.
++ App.js aggregates all project screens and routes and gives them acccess to app's store via `provider`.
++ Route.js defines all project navigation routes.
++ Api.js contains functions which help fetch and parse data from api. 
++ Types.js defines descriptions for different data types, which are used in an app.
++ Utils.js contains useful functions such as email validation, text translation, formatting uri strings etc.
