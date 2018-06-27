@@ -27,5 +27,20 @@ $ npm start
 ```
 ---
 ## Project description
+Project's core folder is `src`.
+**`src` folder contents:**
+### Folders
+- actions
+- components
+- enums
+- reducers
+- screens
+- store
+### Files
+- Api.js
+- App.js
+- Route.js
+- Theme.js
+- Types.js
+- Utils.js
 
-The core project folder is `src`.
