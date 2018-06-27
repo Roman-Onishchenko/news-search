@@ -1,10 +1,7 @@
 ![Imgur](https://i.imgur.com/7xrZxT8.png)
 
 # Kencharts
-> Additional information or tagline
-
-A brief description of your project, what it is used for and how does life get
-awesome when someone starts to use it.
+Mobile app for monitoring markets & stocks updates in real-time charts. It helps to keep your investments close, anywhere you go.
 
 ## Installing / Getting started
 
