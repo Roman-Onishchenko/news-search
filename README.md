@@ -26,3 +26,6 @@ $ npm install
 $ npm start
 ```
 ---
+## Project description
+
+The core project folder is `src`.
