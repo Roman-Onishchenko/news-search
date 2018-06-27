@@ -1,6 +1,6 @@
-![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
+![Imgur](https://i.imgur.com/7xrZxT8.png)
 
-# Name of the project
+# Kencharts
 > Additional information or tagline
 
 A brief description of your project, what it is used for and how does life get
