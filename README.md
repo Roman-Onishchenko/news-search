@@ -55,9 +55,9 @@ Let's concisely describe some project folders and files:
 + Utils.js contains useful functions such as email validation, text translation, formatting uri strings etc.
 
 ### Folders
-+ actions
-+ components
-+ enums
-+ reducers
-+ screens
-+ store
++ actions folder contains action creators and action types, which we use to get, post, delete data.
++ screens folder contains all projecr screens which user can navigate via routes.
++ enums containes files with data, which is used in different parts of an app.
++ reducers are stores for entire app data.
++ components are mostly reusable and small parts of code, which are used in different screens to render some markup.
++ store provides a way to connect reducers, actions and async storage to work together.
