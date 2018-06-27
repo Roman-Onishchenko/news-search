@@ -47,8 +47,17 @@ Project's core folder is `src`.
 ---
 ## Project description
 Let's concisely describe some project folders and files:
-+ App.js aggregates all project screens and routes and gives them acccess to app's store via `provider`.
+### Files
++ App.js aggregates all project screens and routes and gives them access to app's store via `provider`.
 + Route.js defines all project navigation routes.
 + Api.js contains functions which help fetch and parse data from api. 
 + Types.js defines descriptions for different data types, which are used in an app.
 + Utils.js contains useful functions such as email validation, text translation, formatting uri strings etc.
+
+### Folders
++ actions
++ components
++ enums
++ reducers
++ screens
++ store
